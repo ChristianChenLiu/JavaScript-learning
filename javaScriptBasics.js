@@ -7,7 +7,7 @@ console.log("Hello World!");
 let personName = "Christian";
 console.log(personName);
 
-//Dynamic variables
+//Weak dynamic variables
 let interestRate = 3;
 interestRate = "it is 3";
 console.log(interestRate);
@@ -38,3 +38,9 @@ function greet(personName) {
 }
 
 greet("Yo");
+
+function square(aNumber) {
+  return aNumber * aNumber;
+}
+
+console.log(square(3));
