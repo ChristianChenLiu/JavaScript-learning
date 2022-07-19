@@ -1,9 +1,11 @@
+//One can view the console logs in the console tab via inspecting the index.html website
+
 //Console
 console.log("Hello World!");
 
 //Variable basic
-let name = "Christian";
-console.log(name);
+let personName = "Christian";
+console.log(personName);
 
 //Dynamic variables
 let interestRate = 3;
@@ -11,12 +13,12 @@ interestRate = "it is 3";
 console.log(interestRate);
 
 //Object
-let person = { name: "Chris", age: 21 };
+let person = { personName: "Chris", age: 21 };
 
-person.name = "Chen";
+person.personName = "Chen";
 
 console.log(person);
-console.log(person.name);
+console.log(person.personName);
 console.log(person["age"]);
 
 //Array is an object
@@ -30,8 +32,9 @@ console.log(someColours);
 console.log(someColours.length);
 
 //Basic functions
-function greet() {
-  console.log("Hello");
+function greet(personName) {
+  //Interestingly it uses the argument instead of global variable and no errors or warnings
+  console.log("Hello " + personName);
 }
 
-greet();
+greet("Yo");
